@@ -31,7 +31,8 @@ public class MainClass extends FakeRepository{
         List<Album> albList = session.createQuery("SELECT a FROM Album a", Album.class).getResultList();
         
         GenreModel gModel = new GenreModel();
-                
+        
+        
         for (Genre a : gModel.genresList) {
             System.out.println("Genre - " + a.getName());
         }
